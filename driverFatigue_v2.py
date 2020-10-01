@@ -47,7 +47,7 @@ def soundAlert(path, threadStatusQ):
 		dtString = now.strftime('%H:%M:%S')
 		today = date.today()
 		dtdate = today.strftime("%d/%m/%Y")
-		file.writelines(f'\n{"Sleep Alert"},{dtString},{dtdate}')
+		#file.writelines(f'\n{"Sleep Alert"},{dtString},{dtdate}')
 	playsound.playsound(path)
     #while True:
     #    if not threadStatusQ.empty():
@@ -163,7 +163,7 @@ while True:
 				dtString = now.strftime('%H:%M:%S')
 				today = date.today()
 				dtdate = today.strftime("%d/%m/%Y")
-				file.writelines(f'\n{"Yawning"},{dtString},{dtdate}')
+				#file.writelines(f'\n{"Yawning"},{dtString},{dtdate}')
 		else:
 			yawnStatus = False
 
